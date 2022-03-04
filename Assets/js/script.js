@@ -5,15 +5,6 @@ var currentDate = moment().format('dddd') + moment().format("MMM Do YY");
 var currentHour = moment().format('MMMM Do YYYY, h:mm:ss a');
 
 // setting variables by selecting ids from index.html
-var nineAm = $('#9am');
-var tenAm = $('#10am');
-var elevenAm = $('#11am');
-var twelvePm = $('#12pm');
-var onePm = $('#1pm');
-var twoPm = $('#2pm');
-var threePm = $('#3pm');
-var fourPm = $('#4pm');
-var fivePm = $('#5pm');
 
 
 $('.saveBtn').on("click",function(){
@@ -27,3 +18,12 @@ $('.saveBtn').on("click",function(){
     console.log(usuerInput,timeBlock,)
 localStorage.setItem(timeBlock,usuerInput)
 })
+
+for ( let i = 9; i <= 17; i++) {
+    var storData = localStorage.getItem(i)
+    if (i < 12) {
+        $('#'+ i + 'am').val(storData)
+    } else {
+        $('#'+ i + 'pm').val(storData)
+    }
+}
