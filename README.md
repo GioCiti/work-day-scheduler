@@ -17,3 +17,7 @@ For this project I ultized HTML, CSS, and Javascript. I also ultized bootstrap f
 
 **Small Preview:**
 ![Screen Shot 2022-03-06 at 12 13 41 PM](https://user-images.githubusercontent.com/97917815/156940494-9ae21736-732e-48e3-86df-a6afcf22decb.png)
+
+Deployed App:
+
+"https://giociti.github.io/work-day-scheduler/"
